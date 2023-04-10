@@ -5,28 +5,28 @@ import arrowIcon from './assets/images/icon-arrow.svg'
 function App() {
 
   return (
-    <div className="container">
+    <main className="container">
       {/* Input */}
       <div className="wrapper">
         <form className='form'>
           <div className="inputs">
-            <div className='input_container'>
+            <section className='inputs__container'>
               <label htmlFor="day">DAY</label>
               <input className='inp' type="number" id='day' placeholder='DD' />
-            </div>
+            </section>
 
-            <div className='input_container'>
+            <section className='inputs__container'>
               <label htmlFor="month">MONTH</label>
               <input className='inp' type="number" id='month' placeholder='MM' />
-            </div>
+            </section>
 
-            <div className='input_container'>
+            <section className='inputs__container'>
               <label htmlFor="year">YEAR</label>
               <input className='inp' type="number" id='year' placeholder='YYYY' />
-            </div>
+            </section>
           </div>
           {/* Button */}
-          <div className='submitButton'>
+          <div className='submit__button'>
             <div className="line"></div>
             <button> <img src={arrowIcon} alt='Submit' /></button>
           </div>
@@ -34,14 +34,14 @@ function App() {
 
 
         {/* Outputs */}
-        < div className="outputs" >
+        <section className="outputs" >
           <h2><span>{32}</span> years</h2>
           <h2><span>{12}</span> months</h2>
           <h2><span>{24}</span> days</h2>
-        </div >
+        </section >
       </div>
 
-    </div >
+    </main >
 
   );
 }
