@@ -111,6 +111,22 @@ input::-webkit-inner-spin-button {
     margin-top: 1.5rem;
 }
 
+/* Error states */
+.input__error {
+    border: 1px solid hsl(0, 100%, 67%) !important;
+}
+
+.label__error {
+    color: hsl(0, 100%, 67%) !important;
+}
+
+.error__text {
+    color: hsl(0, 100%, 67%);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
 @media (max-width: 768px) {
     .inputs {
         justify-content: space-between;
